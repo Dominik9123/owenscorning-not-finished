@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <title>Owens Corning Polska</title>
+    <link rel="stylesheet" href="kontakt.css">
+    <script src="https://kit.fontawesome.com/35fd302b58.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+    
+    <!-- <div class="video-bck">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="images/video2.mp4" type="video/mp4">
+        </video>
+    </div> -->
+    
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">Strona glowna</a></li>
+            <li><a href="oferta.html">Oferta</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="onas.html">O Nas</a></li>
+        </ul>
+        <ul>
+            <img src="logo.png" class="logo">
+            <li class="hideOnMobile"><a href="index.html">Strona Glowna</a></li>
+            <li class="hideOnMobile"><a href="oferta.html">Oferta</a></li>
+            <li class="hideOnMobile"><a href="galeria.html">Galeria</a></li>
+            <li class="hideOnMobile"><a href="onas.html">O Nas</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+
+
+
+
+ 
+
+    <section>
+        
+        <div class="container">
+            <div class="contactInfo">
+                <div>
+                    <h2>Informacje Kontaktowe</h2>
+                    <ul class="info">
+                        <li>
+                            <span><img src="location.png"></span>
+                            <span>
+                                4795 Frederick Dr<br>
+                                Atlatna, GA 306<br>
+                                90123
+                            </span>
+                        </li>
+                        <li>
+                            <span><img src="mail.png"></span>
+                            <span>
+                                owenscorning@gmail.com
+                            </span>
+                        </li>
+                        <li>
+                            <span><img src="call.png"></span>
+                            <span>
+                                +1 234 242 214
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                  <ul class="sci">
+                    <li><a href="#"><img src="1.png"></a></li>
+                    <li><a href="#"><img src="2.png"></a></li>
+                    <li><a href="#"><img src="3.png"></a></li>
+                    <li><a href="#"><img src="4.png"></a></li>
+                    <li><a href="#"><img src="5.png"></a></li>
+                  </ul>
+
+            </div>
+
+            <div class="contactForm">
+               <h2>Wyslij Nam Wiadomosc</h2>
+               <form action="https://formsubmit.co/2516ef1017fe3748066708bafb34a3d7" method="POST">
+                <!-- Honeypot -->
+                <input type="text" name="_honey" style="display: none;">
+
+                <!-- Disable Captcha -->
+                <input type="hidden" name="_captcha" value="false">
+
+                 <input type="hidden" name="_next" value="https://dominik9123.github.io/owenscorning/kontakt2.html">
+
+               <div class="formBox">
+                <div class="inputBox w50">
+                 <input type="text" name="name" required>
+                 <span>Imie</span>
+                </div>
+               
+
+
+               <div class="inputBox w50">
+                <input type="text" name="Last&nbsp;Name" required>
+                <span>Nazwisko</span>
+               </div>
+
+               <div class="inputBox w50">
+                <input type="email" name="email" required>
+                <span>E-Mail</span>
+               </div>
+
+               <div class="inputBox w50">
+                <input type="text" name="phone" required>
+                <span>Numer Telefonu</span>
+               </div>
+
+               <div class="inputBox w100">
+                <textarea required name="comments,&nbsp;questions"></textarea>
+                <span>Napisz Tutaj Swoja Wiadomosc...</span>
+               </div>
+
+               <div class="inputBox w100">
+                  <button type="submit" value="Send">Wyslij Wiadomosc</button>
+                </form>
+                </div>
+
+                                 
+            </div>
+            </div>
+        </div>
+
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hideSidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
+
+    </section>
+</body>
+</html>
+
+
+
+
+
+<!-- Pomysl zaczerapany od : https://www.youtube.com/@OnlineTutorialsYT -->

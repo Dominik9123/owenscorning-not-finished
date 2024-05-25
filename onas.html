@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <title>Owens Corning Polska</title>
+    <link rel="stylesheet" href="onas.css">
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">Strona glowna</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="oferta.html">Oferta</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+        </ul>
+        <ul>
+            <img src="logo.png" class="logo">
+            <li class="hideOnMobile"><a href="index.html">Strona Glowna</a></li>
+            <li class="hideOnMobile"><a href="kontakt.html">Kontakt</a></li>
+            <li class="hideOnMobile"><a href="oferta.html">Oferta</a></li>
+            <li class="hideOnMobile"><a href="galeria.html">Galeria</a></li>
+            <li class="menu-button" onclick=shwSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+        <div class="main">
+            <div class="about-img">
+                <img src="onas2.png">
+            </div>
+            <div class="about-text">
+                <h1>Czym sie zajmujemy?</h1>
+                <h5>Pokrycia<span> Dachowe</h5>
+                <p>Nasza siedziba znajduje sie w Toledo w Stanach Zjednoczonych. Opracowujemy i produkujemy izolacje,pokrycia dachowe i kompozyty z wlokna szklanego oraz powiazane materialy i produkt. Jestesmy najwiekszym na swiecie producenetem kompozytow z wlokna szklanego. Od 69 lat opracowujemy rozwiazania oszczedzajace energie i poprawiajace komfort w budynkach komercyjnych i mieszkalnych</p>
+                <HR></HR>
+                 <!-- <button type="button">Porozmawiajmy!</button> -->
+            </div>
+        </div>
+     <div class="main2">
+        <div class="about-img2">
+            <img src="onas3.png">
+        </div>
+        <div class="about-text2">
+            <h1>Wysokiej Jakosci Materialy</h1>
+            <h5>Gwarancja<span> Uslugi</h5>
+             <p>Materialy najwyzszej jakosci, importowane z krajow skandynawskich odpornych na klimat europejski. Wieloletnia usluga na materialy stosowane przez nasza firme i gwarancja jakosci wykonania. Certyfikaty oraz wieloletnie doswiadczenie daje gwarancje naszej firmie oraz wykonanywanej przez nia usluge na rzecz zleceniodawcy</p>
+        </div>
+    </div>
+      
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+</html>

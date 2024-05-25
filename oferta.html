@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owens Corning Polska</title>
+     <link rel="stylesheet" href="oferta.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+     <link rel="icon" href="logo.png">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">Strona glowna</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="onas.html">O Nas</a></li>
+        </ul>
+        <ul>
+            <img src="logo.png" class="logo">
+            <li class="hideOnMobile"><a href="index.html">Strona Glowna</a></li>
+            <li class="hideOnMobile"><a href="kontakt.html">Kontakt</a></li>
+            <li class="hideOnMobile"><a href="galeria.html">Galeria</a></li>
+            <li class="hideOnMobile"><a href="onas.html">O Nas</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+   
+<section>
+    <div class="row">
+        <h2 class="section-heading">Nasze Uslugi</h2>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <div class="icon-wrapper">
+                    <i class="fa-solid fa-hammer"></i>
+                </div>
+                <h3>Naprawa Uszkodzen</h3>
+                <p>
+                    Naprawa pokryc dachowych ktore powstaly na skutek zniszczen naturalnych jak i fizycznych
+                </p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <div class="icon-wrapper">
+                    <i class="fa-solid fa-ruler-horizontal"></i>
+                </div>
+                <h3>Wymiar & Wycena</h3>
+                <p>
+                    Wymiar powierzchni dachowej oraz wycena materialow do pokrycia dachu.
+                </p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <div class="icon-wrapper">
+                    <i class="fa-solid fa-droplet"></i>
+                </div>
+                <h3>Wysoka jakosc materialow</h3>
+                <p>
+                    Nasze materialy zapewniaja ochrone przed warunkami atmosferycznymi
+                </p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <div class="icon-wrapper">
+                    <i class="fa-solid fa-paint-roller"></i>
+                </div>
+                <h3>Szeroka Oferta</h3>
+                <p>
+                    Szeroka oferta pokryc dachowych oraz kompozytow wykonywanych z wklokna szklanego
+                </p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <div class="icon-wrapper">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <h3>Gwarancja</h3>
+                <p>
+                    Gwarancja naszych produktow na 25 lat.
+                </p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <div class="icon-wrapper">
+                    <i class="fa-regular fa-clock"></i>
+                </div>
+                <h3>Czas Realizacji</h3>
+                <p>
+                    Szybki czas realizacji zlecenia
+                </p>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+  
+</body>
+</html>

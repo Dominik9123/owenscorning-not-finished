@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+nav {
+    background-color: white;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+}
+nav .logo {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    margin: 30px;
+    width: 90px;
+    
+
+    
+}
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li {
+    height: 50px;   
+}
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover {
+    background-color: #e0e0e0;
+}
+nav li:first-child {
+    margin-right: auto;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+.sidebar a {
+    width: 100%;
+}
+.menu-button {
+    display: none;
+}
+
+
+/* .about {
+    width: 100%;
+    padding: 78px 0px;
+    background-color: #fff;
+} */
+
+.about-img {
+    height: auto;
+    width: 320px;
+    margin-right: 350px;
+    padding-right: 60px;
+    padding-top: 30px;
+    margin-bottom: 130px;
+
+}
+
+.about-img2 {
+    height: auto;
+    width: 320px;
+    float: left;
+    margin-right: 100px;
+}
+
+.about-text2 {
+    margin-left: 350px;
+    flex-grow: 1;
+}
+
+
+.about-text {
+    width: 550px;
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin : 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main2 {
+    width: 1130px;
+    max-width: 95%;
+    margin : 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.about-text h1 {
+    color: black;
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.about-text2 h1 {
+    color: black;
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+
+.about-text h5 {
+    color: black;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.about-text2 h5 {
+    color: black;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+span {
+    color: rgb(255, 0, 0);
+}
+
+.about-text p {
+    color: black;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+.about-text2 p {
+    color: black;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+
+/* button {
+    background: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+}
+button:hover {
+    background: transparent;
+    border: 2px solid rgb(255, 0, 0);;
+} */
+
+
+@media(max-width: 800px) {
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
+}
+
+@media(max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+@media(max-width: 800px) {
+    
+    .main {
+        flex-direction: column; 
+        overflow-x: hidden;
+        
+        
+    }
+
+    .about {
+        padding: 40px 20px;
+    }
+
+    .about-img {
+        max-width: 90%;
+        width: auto;
+        margin-right: 190px;
+    
+    }
+
+    .about-text {
+        width: 100%; 
+    }
+
+    .about-text h1 {
+        font-size: 30px; 
+    }
+
+    .about-text h5 {
+        font-size: 20px; 
+        margin-bottom: 20px; 
+    }
+
+    .about-text p {
+        font-size: 16px; 
+        line-height: 24px; 
+        margin-bottom: 30px; 
+    }  
+    .logo {
+        display: none;
+    }
+}
